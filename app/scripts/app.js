@@ -9,7 +9,8 @@
 
   App.IndexRoute = Ember.Route.extend({
     model: function () {
-      return ['purple', 'yellow', 'blue'];
+        return [{ text: 'green', children: [{ text: "sd", children: [] }] },
+          { text: 'yellow', children: [] }, { text: 'blue', children: [] }];
     }
   });
 })(this);

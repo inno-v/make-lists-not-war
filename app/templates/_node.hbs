@@ -1,0 +1,8 @@
+<input type="text" value="{{item.text}}">
+{{#if item.children.length}}
+  <ul>
+    {{#each item in item.children}}
+      <li>{{partial "node"}}</li>
+    {{/each}}
+  </ul>
+{{/if}}
